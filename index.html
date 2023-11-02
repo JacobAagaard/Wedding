@@ -223,7 +223,7 @@
         padding-left: 32px;
         position: relative;
         height: 100%;
-        border-left: 2px dotted #999;
+        border-left: 2px dotted #ccc;
       }
       .img-position {
         position: absolute;
@@ -252,7 +252,7 @@
         border: 4px solid #333;
         border-radius: 8px;
       }
-      .dot div p:first {
+      .agenda-time {
         color: #333;
         font-weight: 700;
       }
@@ -522,7 +522,7 @@
                 </div>
                 <li class="dot">
                   <div style="font-family: 'Raleway'">
-                    <p>12:00</p>
+                    <p class="agenda-time">12:00</p>
                     <p>Vielse | Esküvő | Wedding</p>
                   </div>
                   <span>
@@ -541,7 +541,7 @@
                 </div>
                 <li class="dot">
                   <div style="font-family: 'Raleway'">
-                    <p>15:00</p>
+                    <p class="agenda-time">15:00</p>
                     <p>Kaffe | Kávé | Coffee</p>
                   </div>
                   <span>
@@ -560,7 +560,7 @@
                 </div>
                 <li class="dot">
                   <div style="font-family: 'Raleway'">
-                    <p>17:30</p>
+                    <p class="agenda-time">17:30</p>
                     <p>Middag | Vacsora | Dinner</p>
                   </div>
                   <span>
@@ -579,7 +579,7 @@
                 </div>
                 <li class="dot">
                   <div style="font-family: 'Raleway'">
-                    <p>22:00</p>
+                    <p class="agenda-time">22:00</p>
                     <p>
                       Fest &amp; Hygge | Buli &amp; Szórakoz | Party &amp; Fun
                     </p>
@@ -600,7 +600,7 @@
               </div>
               <li class="dot">
                 <div style="font-family: 'Raleway'">
-                  <p>10:00</p>
+                  <p class="agenda-time">10:00</p>
                   <p>Brunch | Villásreggeli | Brunch</p>
                 </div>
                 <p>☕🥐🍩🥞</p>
@@ -616,84 +616,88 @@
       id="location"
       style="position: relative"
     >
-      <div id="program">
-        <div
-          style="
-            border-bottom-color: rgb(33, 39, 56);
-            margin-bottom: 48px;
-            padding-bottom: 48px;
-            border-bottom: 1px solid;
-          "
-        >
-          <div class="img-position">
-            <img
-              class="img-icon"
-              src="/img/blueprint-img/set_2/set_2_couple.png"
-            />
+      <div class="hero-body">
+        <div id="program" class="container has-text-centered">
+          <div
+            style="
+              border-bottom-color: rgb(33, 39, 56);
+              margin-bottom: 48px;
+              padding-bottom: 48px;
+              border-bottom: 1px solid;
+            "
+          >
+            <div class="img-position">
+              <img
+                class="img-icon"
+                src="img/blueprint-img/set_2/set_2_couple.png"
+              />
+            </div>
+            <div>
+              <h2 class="title is-3">Vielse | Esküvő | Wedding</h2>
+              <p>
+                <span>
+                  <p>
+                    🇩🇰 Vi starter med den mere formelle del af dagen; selve
+                    vielsen, som foregår i
+                  </p>
+                  <p>🇭🇺 A napot a házasságkötéssel kezdjük a következö címen</p>
+                  <p>
+                    🇬🇧 We start off with the more formal part; the wedding
+                    itself, taking place at
+                  </p>
+                  <p><br /></p>
+                  <p><b>Christians Kirke,</b></p>
+                  <p><b>Strandgade 1, 1401 København K</b></p>
+                  <p><br /></p
+                ></span>
+              </p>
+            </div>
+            <div>
+              <a
+                href="https://www.christianskirke.dk/page/409/frederiks-tyske-kirke"
+                target="_blank"
+                type="button"
+              >
+                www.christianskirke.dk
+              </a>
+            </div>
           </div>
           <div>
-            <h2>Vielse | Esküvő | Wedding</h2>
-            <p>
-              <span>
-                <p>
-                  🇩🇰 Vi starter med den mere formelle del af dagen; selve
-                  vielsen, som foregår i
-                </p>
-                <p>🇭🇺 A napot a házasságkötéssel kezdjük a következö címen</p>
-                <p>
-                  🇬🇧 We start off with the more formal part; the wedding itself,
-                  taking place at
-                </p>
-                <p><br /></p>
-                <p><b>Christians Kirke,</b></p>
-                <p><b>Strandgade 1, 1401 København K</b></p>
-                <p><br /></p
-              ></span>
-            </p>
-          </div>
-          <div>
-            <a
-              href="https://www.christianskirke.dk/page/409/frederiks-tyske-kirke"
-              target="_blank"
-              type="button"
-            >
-              www.christianskirke.dk
-            </a>
-          </div>
-        </div>
-        <div>
-          <div>
-            <img src="/img/blueprint-img/set_2/set_2_arch.png" />
-          </div>
-          <div>
-            <h2>Middag &amp; Fest | Vacsora &amp; Buli | Dinner &amp; Party</h2>
-            <p>
-              <span>
-                <p>
-                  🇩🇰 Efterfølgende middag og fest afholdes i idylliske rammer,
-                  som foregår i
-                </p>
-                <p>🇭🇺 Ezután a vacsora és a buli a következö címen lesz</p>
-                <p>
-                  🇬🇧 Followed by dinner and party in idyllic settings, taking
-                  place at
-                </p>
-                <p><br /></p>
-                <p><b>Kulhusekolonien,</b></p>
-                <p>
-                  <b>Kulhusvej 209, 3630 Jægerspris</b>
-                </p>
-              </span>
-            </p>
-          </div>
-          <div>
-            <a
-              href="http://www.kulhusekolonien.dk/"
-              target="_blank"
-              type="button"
-            >
-              www.kulhusekolonien.dk
-            </a>
+            <div>
+              <img src="img/blueprint-img/set_2/set_2_arch.png" />
+            </div>
+            <div>
+              <h2 class="title is-3">
+                Middag &amp; Fest | Vacsora &amp; Buli | Dinner &amp; Party
+              </h2>
+              <p>
+                <span>
+                  <p>
+                    🇩🇰 Efterfølgende middag og fest afholdes i idylliske rammer,
+                    som foregår i
+                  </p>
+                  <p>🇭🇺 Ezután a vacsora és a buli a következö címen lesz</p>
+                  <p>
+                    🇬🇧 Followed by dinner and party in idyllic settings, taking
+                    place at
+                  </p>
+                  <p><br /></p>
+                  <p><b>Kulhusekolonien,</b></p>
+                  <p>
+                    <b>Kulhusvej 209, 3630 Jægerspris</b>
+                  </p>
+                </span>
+              </p>
+            </div>
+            <div>
+              <a
+                href="http://www.kulhusekolonien.dk/"
+                target="_blank"
+                type="button"
+              >
+                www.kulhusekolonien.dk
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -718,75 +722,157 @@
         allowfullscreen
       ></iframe> -->
 
-    <!-- WEDDING SECTION BEGIN -->
+    <!-- SLEEPOVER SECTION BEGIN -->
     <section
-      class="hero is-danger is-bold is-fullheight"
+      class="hero is-white is-bold is-fullheight"
       id="celebrate"
       style="position: relative"
     >
       <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title is-1" style="font-family: 'Merriweather', cursive">
-            Celebrate with us
-          </h1>
-          <div class="columns is-centered">
-            <div class="column is-5 is-4-desktop">
-              <br />
-              <span class="icon is-huge">
-                <svg class="fa icon-moon-o">
-                  <use
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="#icon-moon-o"
-                  ></use>
-                </svg>
+        <div class="container">
+          <div id="sleepover">
+            <span class="icon is-huge">
+              <svg class="fa icon-moon-o">
+                <use
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#icon-moon-o"
+                ></use>
+              </svg>
+            </span>
+            <h2 class="title is-3 has-text-centered">
+              Overnatning | Szállás | Sleepover
+            </h2>
+            <p>
+              <span
+                ><p>
+                  🇩🇰 Koloniens førstesal har sovepladser til 74 voksne (50
+                  permanente senge + 24 flytbare madrasser), fordelt på 10 rum.
+                  Værelserne har op til 8 senge, så man skal være indstillet på
+                  at dele værelse med andre. Giv besked i RSVP, nederst på
+                  siden, om du/I vil have en seng, og evt. hvem af de andre
+                  gæster du vil dele værelse med, ved at indtaste navne i
+                  følgende
+                  <a
+                    href="https://docs.google.com/spreadsheets/d/1NCEkJ3mfZxLcs8epNmUniZ5SYVqQXhJw-XIytsqhlOI/edit?usp=drivesdk"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Excel ark</a
+                  >
+                  ➡️✍️ Så gør vi vores bedste for at få det til at gå op.
+                </p>
+                <p>
+                  🇭🇺 A helyszín elsö emeletén 74 alvóhely található (50
+                  beépitett ágy és 24 mozgatható matrac), 10 szobára elosztva. A
+                  legtöbb szoba 6-8 személyes így fel kell készülni arra hogy
+                  másokkal megossza tok egy szobát. Az oldal alján az RSVPbe
+                  jelezzétek kérlek, hogyha szeretnétek alvóhelyet foglalni és
+                  esetleg hogy kivel szeretnél szobát osztani. Írja be a nevét
+                  <a
+                    href="https://docs.google.com/spreadsheets/d/1NCEKJ3mfZxLcs8epNmUniZ5SYVqQXhJw-XIytsqhlOI/edit?usp=drivesdk"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >a táblázatban</a
+                  >
+                  elérhető szobákba ➡️✍️ Ezután mindent megteszünk annak
+                  érdekében, hogy mindenki számára működjön.
+                </p>
+                <p>
+                  🇬🇧 The first floor of the venue contains sleeping spots for 74
+                  adults (50 permanent beds + 24 movable mattresses), split out
+                  on 10 rooms. The rooms have up to 8 beds, so be prepared to
+                  share the room with others - hostel style. Let us know in the
+                  RSVP section at the bottom of the page if you would like to
+                  book a bed and optionally write whom of the other guests you
+                  would prefer to share room with. Insert your name in the
+                  available rooms in
+                  <a
+                    href="https://docs.google.com/spreadsheets/d/1NCEkJ3mfZxLcs8epNmUniZ5SYVqQXhJw-XIytsqhlOI/edit?usp=drivesdk"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >this spreadsheet</a
+                  >
+                  ➡️✍️ We will then do our best to make it work for everyone.
+                </p>
+                <p><br /></p>
+                <p>🇩🇰 Alternative overnatningsmuligheder</p>
+                <p>🇭🇺 Alternatív szálláslehetőségek</p>
+                <p>🇬🇧 Alternative accomodation options:</p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.dcu.dk/da/dcu-camping/kulhuse"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      >DCU Camping Kulhuse</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.airbnb.com/s/Kulhuse--J%C3%A6gerspris/homes?tab_id=home_tab&amp;flexible_trip_lengths%5B%5D=one_week&amp;monthly_start_date=2023-09-01&amp;monthly_length=3&amp;price_filter_input_type=0&amp;price_filter_num_nights=5&amp;channel=EXPLORE&amp;refinement_paths%5B%5D=%2Fhomes&amp;place_id=ChIJo5CDLnByUkYRBANbVKSOugM&amp;query=Kulhuse%2C%20J%C3%A6gerspris&amp;date_picker_type=calendar&amp;checkin=2024-04-19&amp;checkout=2024-04-21&amp;adults=2&amp;search_type=unknown"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      >Airbnb</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://bautahoj.dk/vaerelser/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      >Bautahøj Kursuscenter</a
+                    >
+                  </li>
+                </ul>
               </span>
-              <br /><br />
-              <h2
-                class="subtitle is-3"
-                style="font-family: 'Merriweather', cursive"
-              >
-                night before
-              </h2>
-              <p class="subtitle is-5">
-                <a href="http://www.theepicurean.com.au/" target="_blank"
-                  ><u>The Epicurean</u></a
-                >
-                is a beautiful old packers shed that serves fresh Italian food
-                using locally grown produce. We shall be making a reservation
-                for dinner on the Friday night for 7pm ($50 per head + drinks).
-                If you'd like to join us, let us know
-                <a href="mailto:j-aagaard@hotmail.com?subject=Wedding RSVP"
-                  ><u>when you RSVP</u></a
-                >.
-              </p>
-            </div>
-            <div class="column is-5 is-4-desktop">
-              <br />
-              <span class="icon heartbeat is-huge">
-                <svg class="fa icon-heart-o">
-                  <use
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="#icon-heart-o"
-                  ></use>
-                </svg>
-              </span>
-              <br /><br />
-              <h2
-                class="subtitle is-3"
-                style="font-family: 'Merriweather', cursive"
-              >
-                morning after
-              </h2>
-              <p class="subtitle is-5">
-                Lindenderry shall be serving breakfast for all hotel guests the
-                morning after at 9am. Non-hotel guests are welcome to join us as
-                well, but will need to pay for their own breakfast.
-              </p>
-            </div>
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <a target="_blank" type="button"> </a>
+            <img src="images/rooms.jpg" />
           </div>
         </div>
       </div>
     </section>
+
+    <!-- ADULT PARTY SECTION BEGIN -->
+    <section
+      class="hero is-white is-bold is-fullheight"
+      id="celebrate"
+      style="position: relative"
+    >
+      <div class="hero-body">
+        <div class="container"></div>
+      </div>
+    </section>
+
+
+    <!-- SECTION TEMPLATE -->
+    <!-- <section
+      class="hero is-white is-bold is-fullheight"
+      id="celebrate"
+      style="position: relative"
+    >
+      <div class="hero-body">
+        <div class="container">
+          INSERT DIV WITH ID HERE
+        </div>
+      </div>
+    </section> -->
+
+
+    <!-- is-danger section with heartbeat -->
+    <!-- <span class="icon heartbeat is-huge">
+      <svg class="fa icon-heart-o">
+        <use
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xlink:href="#icon-heart-o"
+        ></use>
+      </svg>
+    </span> -->
+
+    
     <section
       class="hero is-fullheight"
       id="gallery"
