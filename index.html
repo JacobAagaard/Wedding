@@ -14,9 +14,13 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Merriweather"
     />
-        <link
+    <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Satisfy"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
     />
     <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -200,20 +204,61 @@
           -webkit-transform: scale(0.99);
         }
       }
+      .hero.is-dark.is-fullheight {
+        background-image: url(images/proposal.png);
+      }
       @media screen and (min-width: 1024px) {
         .hero.is-dark {
           background-attachment: fixed !important;
         }
-        .hero {
+        .hero.is-dark.is-fullheight {
           background-image: url(images/proposal.jpg);
         }
       }
+
+      /* BIG DAY STYLES BEGIN */
+      ol {
+        margin-left: 72px;
+        margin-bottom: 48px;
+        padding-left: 32px;
+        position: relative;
+        height: 100%;
+        border-left: 2px dotted #999;
+      }
+      .img-position {
+        position: absolute;
+        left: -72px;
+      }
+      .img-icon {
+        max-height: 40px;
+        max-width: 40px;
+        margin-top: -4px;
+      }
+      li {
+        display: block;
+        position: relative;
+        top: 0;
+        margin-top: 16px;
+        margin-bottom: 24px;
+        min-height: 48px;
+      }
+      li.dot:before {
+        content: "";
+        position: absolute;
+        left: -37px;
+        width: 8px;
+        height: 8px;
+        top: 12px;
+        border: 4px solid #333;
+        border-radius: 8px;
+      }
+      /* BIG DAY STYLES END */
     </style>
     <script>
       $(document).ready(function () {
         $(".countdown")
           .countdown({
-            until: new Date("Mar 17 2018 16:00:00 +1100"),
+            until: new Date("Apr 20 2024 12:00:00 +0200"),
             compact: true,
           })
           .show()
@@ -360,6 +405,7 @@
                     font-size: 2.4rem;
                     color: #fff;
                     margin-top: 10px;
+                    margin-left: 10px;
                   "
                   >ja</span
                 >
@@ -378,7 +424,6 @@
               <a href="#dress-code" class="nav-item">Dress code</a>
               <a href="#toastmaster" class="nav-item">Toastmaster</a>
               <a href="#rsvp" class="nav-item">RSVP</a>
-              <a href="#countdown" class="nav-item">Countdown</a>
               <a href="#wish-a-song" class="nav-item">Wish a song</a>
               <a href="#wishlist" class="nav-item">🎁</a>
               <a href="#parking" class="nav-item">Parking</a>
@@ -391,7 +436,6 @@
       class="hero is-dark is-fullheight"
       style="
         position: relative;
-        background-image: url(images/proposal.png);
         background-repeat: no-repeat;
         background-position: center top;
         background-size: cover;
@@ -401,18 +445,10 @@
       <!-- Hero content: will be in the middle -->
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h1
-            class="title is-1"
-            style="font-family: 'Merriweather', cursive; font-size: 5rem"
-          >
+          <h1 class="title is-1" style="font-family: 'Merriweather'">
             <b style="">J</b>acob &amp; <b>A</b>marilla
           </h1>
-          <h2
-            class="title is-3"
-            style="font-family: 'Merriweather', cursive;"
-          >
-            20/04/2024
-          </h2>
+          <h2 class="title is-4" style="font-family: 'Raleway'">20/04/2024</h2>
         </div>
       </div>
       <!-- Hero footer: will stick at the bottom -->
@@ -447,60 +483,116 @@
         "
       ></div>
       <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1
-            class="title is-1"
-            style="font-family: 'Merriweather', cursive; font-size: 5rem"
-          >
-            Our big day
-          </h1>
-          <div class="columns is-centered">
-            <div class="column is-5 is-4-desktop">
-              <br />
-              <span class="icon is-huge">
-                <svg class="fa icon-clock-o">
-                  <use
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="#icon-clock-o"
-                  ></use>
-                </svg>
-              </span>
-              <br /><br />
-              <h2
-                class="subtitle is-3"
-                style="font-family: 'Merriweather', cursive; font-size: 3.33rem"
-              >
-                when
-              </h2>
-              <p class="subtitle is-5">
-                17th Mar 2018<br />Ceremony begins 4pm<br /><span
-                  class="countdown"
-                  style="display: none"
-                ></span>
-              </p>
-            </div>
-            <div class="column is-5 is-4-desktop">
-              <br />
-              <span class="icon is-huge">
-                <svg class="fa icon-map-marker">
-                  <use
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="#icon-map-marker"
-                  ></use>
-                </svg>
-              </span>
-              <br /><br />
-              <h2
-                class="subtitle is-3"
-                style="font-family: 'Merriweather', cursive; font-size: 3.33rem"
-              >
-                where
-              </h2>
-              <p class="subtitle is-5">
-                Lindenderry Estate<br />142 Arthurs Seat Road<br />Red Hill
-                3937, Australia
-              </p>
-            </div>
+        <div id="agenda" class="container has-text-centered">
+          <h2 class="title is-2" style="font-family: 'Merriweather'">Agenda</h2>
+          <div>
+            <label> 20/04/2024 </label>
+            <ol>
+              <div>
+                <div class="img-position">
+                  <img
+                    class="img-icon"
+                    src="/img/blueprint-img/set_2/set_2_rings.png"
+                  />
+                </div>
+                <li class="dot">
+                  <div>
+                    <p>12:00</p>
+                    <p>Vielse | Esküvő | Wedding</p>
+                  </div>
+                  <p>
+                    🇩🇰 Det bliver magisk 🇭🇺 Varázslatos lesz 🇬🇧 Magic Happens
+                  </p>
+                  <div>
+                    <a target="_blank"> </a>
+                  </div>
+                </li>
+              </div>
+              <div>
+                <div class="img-position">
+                  <img
+                    class="img-icon"
+                    src="/img/blueprint-img/set_2/set_2_champagne.png"
+                  />
+                </div>
+                <li class="dot">
+                  <div>
+                    <p>15:00</p>
+                    <p>Kaffe | Kávé | Coffee</p>
+                  </div>
+                  <p>
+                    🇩🇰 Signatur-bagværk fra nær og fjern 🇭🇺 Jellegzetes
+                    péksütemények közelről és távolról 🇬🇧 Signature pastries
+                    from around the world
+                  </p>
+                  <div>
+                    <a target="_blank"> </a>
+                  </div>
+                </li>
+              </div>
+              <div>
+                <div class="img-position">
+                  <img
+                    class="img-icon"
+                    src="/img/blueprint-img/set_2/set_2_plates.png"
+                  />
+                </div>
+                <li class="dot">
+                  <div>
+                    <p>17:30</p>
+                    <p>Middag | Vacsora | Dinner</p>
+                  </div>
+                  <p>
+                    🇩🇰 Helstegt pattegris med tilbehør 🇭🇺 Sült malac köretekkel
+                    🇬🇧 Roast suckling pig with side dishes
+                  </p>
+                  <div>
+                    <a target="_blank"> </a>
+                  </div>
+                </li>
+              </div>
+              <div>
+                <div class="img-position">
+                  <img
+                    class="img-icon"
+                    src="/img/blueprint-img/set_2/set_2_node.png"
+                  />
+                </div>
+                <li class="dot">
+                  <div>
+                    <p>22:00</p>
+                    <p>
+                      Fest &amp; Hygge | Buli &amp; Szórakoz | Party &amp; Fun
+                    </p>
+                  </div>
+                  <p>💃🥳🥂🕺🎊🍻🎈</p>
+                  <div>
+                    <a target="_blank"> </a>
+                  </div>
+                </li>
+              </div>
+            </ol>
+          </div>
+          <div>
+            <label> 21/04/2024 </label>
+            <ol>
+              <div class="img-position">
+                <img
+                  class="img-icon"
+                  src="/img/blueprint-img/set_2/set_2_plates.png"
+                />
+              </div>
+              <li class="dot">
+                <div>
+                  <p>10:00</p>
+                  <p>Brunch | Villásreggeli | Brunch</p>
+                </div>
+                <p>☕🥐🍩🥞</p>
+                <div>
+                  <a target="_blank"> </a>
+                </div>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
@@ -535,10 +627,7 @@
     >
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h1
-            class="title is-1"
-            style="font-family: 'Merriweather', cursive; font-size: 5rem"
-          >
+          <h1 class="title is-1" style="font-family: 'Merriweather', cursive">
             Celebrate with us
           </h1>
           <div class="columns is-centered">
@@ -555,7 +644,7 @@
               <br /><br />
               <h2
                 class="subtitle is-3"
-                style="font-family: 'Merriweather', cursive; font-size: 3.33rem"
+                style="font-family: 'Merriweather', cursive"
               >
                 night before
               </h2>
@@ -585,7 +674,7 @@
               <br /><br />
               <h2
                 class="subtitle is-3"
-                style="font-family: 'Merriweather', cursive; font-size: 3.33rem"
+                style="font-family: 'Merriweather', cursive"
               >
                 morning after
               </h2>
@@ -713,10 +802,7 @@
     >
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h1
-            class="title is-1"
-            style="font-family: 'Merriweather', cursive; font-size: 5rem"
-          >
+          <h1 class="title is-1" style="font-family: 'Merriweather', cursive">
             RSVP
           </h1>
           <br />
