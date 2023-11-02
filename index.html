@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="slider.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Satisfy"
+      href="https://fonts.googleapis.com/css?family=Merriweather"
     />
     <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -26,118 +26,183 @@
     <script src="particles.min.js"></script>
     <style>
       section {
-      	z-index: 2;
+        z-index: 2;
       }
       .icon svg {
-      	fill: currentColor;
-      	height: 21px;
-      	max-width: 21px;
+        fill: currentColor;
+        height: 21px;
+        max-width: 21px;
       }
       .icon.is-small svg {
-      	height: 14px;
-      	max-width: 14px;
+        height: 14px;
+        max-width: 14px;
       }
       .icon.is-medium svg {
-      	height: 28px;
-      	max-width: 28px;
+        height: 28px;
+        max-width: 28px;
       }
       .icon.is-large svg {
-      	height: 42px;
-      	max-width: 42px;
+        height: 42px;
+        max-width: 42px;
       }
       .icon.is-huge {
-      	height: 4rem;
-      	width: 4rem;
+        height: 4rem;
+        width: 4rem;
       }
       .icon.is-huge .fa {
-      	font-size: 56px;
+        font-size: 56px;
       }
       .icon.is-huge svg {
-      	height: 56px;
-      	max-width: 56px;
+        height: 56px;
+        max-width: 56px;
       }
       .icon.is-epic {
-      	height: 6rem;
-      	width: 6rem;
+        height: 6rem;
+        width: 6rem;
       }
       .icon.is-epic .fa {
-      	font-size: 74px;
+        font-size: 74px;
       }
       .icon.is-epic svg {
-      	height: 74px;
-      	max-width: 74px;
+        height: 74px;
+        max-width: 74px;
       }
       .bounce {
-      	-webkit-animation-name: bounce;
-      	-moz-animation-name: bounce;
-      	-o-animation-name: bounce;
-      	animation-name: bounce;
+        -webkit-animation-name: bounce;
+        -moz-animation-name: bounce;
+        -o-animation-name: bounce;
+        animation-name: bounce;
       }
       .animated {
-      	-webkit-animation-fill-mode:both;
-      	-moz-animation-fill-mode:both;
-      	-ms-animation-fill-mode:both;
-      	-o-animation-fill-mode:both;
-      	animation-iteration-count: infinite;
-      	-moz-animation-iteration-count: infinite;
-      	-webkit-animation-iteration-count: infinite;
-      	animation-fill-mode:both;
-      	-webkit-animation-duration:2s;
-      	-moz-animation-duration:2s;
-      	-ms-animation-duration:2s;
-      	-o-animation-duration:2s;
-      	animation-duration:2s;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 2s;
+        -moz-animation-duration: 2s;
+        -ms-animation-duration: 2s;
+        -o-animation-duration: 2s;
+        animation-duration: 2s;
       }
       .heartbeat {
-      	-webkit-animation: heart-beats 3s infinite;
-      	animation: heart-beats 3s infinite;
+        -webkit-animation: heart-beats 3s infinite;
+        animation: heart-beats 3s infinite;
       }
       .heartbeathover:hover {
-      	-webkit-animation: heart-beats 3s 1;
-      	animation: heart-beats 3s 1;
+        -webkit-animation: heart-beats 3s 1;
+        animation: heart-beats 3s 1;
       }
       @-webkit-keyframes bounce {
-      	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	40% {-webkit-transform: translateY(-30px);}
-      	60% {-webkit-transform: translateY(-15px);}
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          -webkit-transform: translateY(0);
+        }
+        40% {
+          -webkit-transform: translateY(-30px);
+        }
+        60% {
+          -webkit-transform: translateY(-15px);
+        }
       }
       @-moz-keyframes bounce {
-      	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
-      	40% {-moz-transform: translateY(-30px);}
-      	60% {-moz-transform: translateY(-15px);}
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          -moz-transform: translateY(0);
+        }
+        40% {
+          -moz-transform: translateY(-30px);
+        }
+        60% {
+          -moz-transform: translateY(-15px);
+        }
       }
       @-o-keyframes bounce {
-      	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
-      	40% {-o-transform: translateY(-30px);}
-      	60% {-o-transform: translateY(-15px);}
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          -o-transform: translateY(0);
+        }
+        40% {
+          -o-transform: translateY(-30px);
+        }
+        60% {
+          -o-transform: translateY(-15px);
+        }
       }
       @keyframes bounce {
-      	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-      	40% {transform: translateY(-30px);}
-      	60% {transform: translateY(-15px);}
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-30px);
+        }
+        60% {
+          transform: translateY(-15px);
+        }
       }
       @keyframes heart-beats {
-      	0%   { transform: scale(1);}
-      	7%   { transform: scale(1.2); }
-      	12%  { transform: scale(1.1); }
-      	20%  { transform: scale(1.3); }
-      	60%  { transform: scale(1); }
-      	100% { transform: scale(0.99); }
+        0% {
+          transform: scale(1);
+        }
+        7% {
+          transform: scale(1.2);
+        }
+        12% {
+          transform: scale(1.1);
+        }
+        20% {
+          transform: scale(1.3);
+        }
+        60% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(0.99);
+        }
       }
       @-webkit-keyframes heart-beats {
-      	0%   { -webkit-transform: scale(1); }
-      	7%   { -webkit-transform: scale(1.2); }
-      	12%  { -webkit-transform: scale(1.1); }
-      	20%  { -webkit-transform: scale(1.3); }
-      	60%  { -webkit-transform: scale(1); }
-      	100% { -webkit-transform: scale(0.99); }
+        0% {
+          -webkit-transform: scale(1);
+        }
+        7% {
+          -webkit-transform: scale(1.2);
+        }
+        12% {
+          -webkit-transform: scale(1.1);
+        }
+        20% {
+          -webkit-transform: scale(1.3);
+        }
+        60% {
+          -webkit-transform: scale(1);
+        }
+        100% {
+          -webkit-transform: scale(0.99);
+        }
       }
       @media screen and (min-width: 1024px) {
-      	.hero.is-dark {
-      		background-attachment: fixed !important;
-      	}
-		.hero {
-			background-image: url(images/proposal.jpg);
-		}
+        .hero.is-dark {
+          background-attachment: fixed !important;
+        }
+        .hero {
+          background-image: url(images/proposal.jpg);
+        }
       }
     </style>
     <script>
@@ -287,7 +352,7 @@
               <a class="nav-item">
                 <span
                   style="
-                    font-family: 'Satisfy', cursive;
+                    font-family: 'Merriweather', cursive;
                     font-size: 2.4rem;
                     color: #fff;
                     margin-top: 10px;
@@ -334,13 +399,13 @@
         <div class="container has-text-centered">
           <h1
             class="title is-1"
-            style="font-family: 'Satisfy', cursive; font-size: 5rem"
+            style="font-family: 'Merriweather', cursive; font-size: 5rem"
           >
             <strong>J</strong>acob &amp; <strong>A</strong>marilla
           </h1>
           <h2
             class="subtitle is-3"
-            style="font-family: 'Satisfy', cursive; font-size: 3.33rem"
+            style="font-family: 'Merriweather', cursive; font-size: 3.33rem"
           >
             20/04/2024
           </h2>
@@ -381,7 +446,7 @@
         <div class="container has-text-centered">
           <h1
             class="title is-1"
-            style="font-family: 'Satisfy', cursive; font-size: 5rem"
+            style="font-family: 'Merriweather', cursive; font-size: 5rem"
           >
             Our big day
           </h1>
@@ -399,7 +464,7 @@
               <br /><br />
               <h2
                 class="subtitle is-3"
-                style="font-family: 'Satisfy', cursive; font-size: 3.33rem"
+                style="font-family: 'Merriweather', cursive; font-size: 3.33rem"
               >
                 when
               </h2>
@@ -423,7 +488,7 @@
               <br /><br />
               <h2
                 class="subtitle is-3"
-                style="font-family: 'Satisfy', cursive; font-size: 3.33rem"
+                style="font-family: 'Merriweather', cursive; font-size: 3.33rem"
               >
                 where
               </h2>
@@ -468,7 +533,7 @@
         <div class="container has-text-centered">
           <h1
             class="title is-1"
-            style="font-family: 'Satisfy', cursive; font-size: 5rem"
+            style="font-family: 'Merriweather', cursive; font-size: 5rem"
           >
             Celebrate with us
           </h1>
@@ -486,7 +551,7 @@
               <br /><br />
               <h2
                 class="subtitle is-3"
-                style="font-family: 'Satisfy', cursive; font-size: 3.33rem"
+                style="font-family: 'Merriweather', cursive; font-size: 3.33rem"
               >
                 night before
               </h2>
@@ -498,8 +563,7 @@
                 using locally grown produce. We shall be making a reservation
                 for dinner on the Friday night for 7pm ($50 per head + drinks).
                 If you'd like to join us, let us know
-                <a
-                  href="mailto:j-aagaard@hotmail.com?subject=Wedding RSVP"
+                <a href="mailto:j-aagaard@hotmail.com?subject=Wedding RSVP"
                   ><u>when you RSVP</u></a
                 >.
               </p>
@@ -517,7 +581,7 @@
               <br /><br />
               <h2
                 class="subtitle is-3"
-                style="font-family: 'Satisfy', cursive; font-size: 3.33rem"
+                style="font-family: 'Merriweather', cursive; font-size: 3.33rem"
               >
                 morning after
               </h2>
@@ -546,8 +610,7 @@
             class="slider__item"
             style="
               height: 100vh;
-              background: url(images/party-people.jpg) no-repeat
-                center center;
+              background: url(images/party-people.jpg) no-repeat center center;
               background-size: cover;
             "
           ></div>
@@ -571,8 +634,7 @@
             class="slider__item"
             style="
               height: 100vh;
-              background: url(images/family.jpg) no-repeat center
-                center;
+              background: url(images/family.jpg) no-repeat center center;
               background-size: cover;
             "
           ></div>
@@ -613,7 +675,7 @@
           <h1
             class="title truncate is-1"
             style="
-              font-family: 'Satisfy', cursive;
+              font-family: 'Merriweather', cursive;
               font-size: 5rem;
               overflow: hidden;
               text-overflow: ellipsis;
@@ -649,7 +711,7 @@
         <div class="container has-text-centered">
           <h1
             class="title is-1"
-            style="font-family: 'Satisfy', cursive; font-size: 5rem"
+            style="font-family: 'Merriweather', cursive; font-size: 5rem"
           >
             RSVP
           </h1>
