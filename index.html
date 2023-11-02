@@ -248,9 +248,28 @@
         left: -37px;
         width: 8px;
         height: 8px;
-        top: 12px;
+        top: 10px;
         border: 4px solid #333;
         border-radius: 8px;
+      }
+      .dot div p:first {
+        color: #333;
+        font-weight: 700;
+      }
+      .agenda-date-label {
+        font-weight: 600;
+        line-height: 1.5;
+        margin-bottom: 8px;
+        padding: 0;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        -webkit-font-smoothing: antialiased;
+      }
+      @media screen and (min-width:1024px) {
+        #agenda.container {
+          max-width: 66.6%;
+        }
       }
       /* BIG DAY STYLES END */
     </style>
@@ -467,6 +486,7 @@
         </a>
       </div>
     </section>
+    <!-- AGENDA SECTION BEGIN -->
     <section
       class="hero is-primary is-bold is-fullheight"
       id="details"
@@ -484,24 +504,31 @@
       ></div>
       <div class="hero-body">
         <div id="agenda" class="container has-text-centered">
-          <h2 class="title is-2" style="font-family: 'Merriweather'">Agenda</h2>
+          <h2
+            class="title is-2 has-text-centered"
+            style="font-family: 'Merriweather'"
+          >
+            Agenda
+          </h2>
           <div>
-            <label> 20/04/2024 </label>
+            <label class="agenda-date-label"> 20/04/2024 </label>
             <ol>
               <div>
                 <div class="img-position">
                   <img
                     class="img-icon"
-                    src="/img/blueprint-img/set_2/set_2_rings.png"
+                    src="img/blueprint-img/set_2/set_2_rings.png"
                   />
                 </div>
                 <li class="dot">
-                  <div>
+                  <div style="font-family: 'Raleway'">
                     <p>12:00</p>
                     <p>Vielse | Esküvő | Wedding</p>
                   </div>
                   <p>
-                    🇩🇰 Det bliver magisk 🇭🇺 Varázslatos lesz 🇬🇧 Magic Happens
+                    <div>🇩🇰 Det bliver magisk</div>
+                    <div>🇭🇺 Varázslatos lesz</div>
+                    <div>🇬🇧 Magic Happens</div>
                   </p>
                   <div>
                     <a target="_blank"> </a>
@@ -512,18 +539,18 @@
                 <div class="img-position">
                   <img
                     class="img-icon"
-                    src="/img/blueprint-img/set_2/set_2_champagne.png"
+                    src="img/blueprint-img/set_2/set_2_champagne.png"
                   />
                 </div>
                 <li class="dot">
-                  <div>
+                  <div style="font-family: 'Raleway'">
                     <p>15:00</p>
                     <p>Kaffe | Kávé | Coffee</p>
                   </div>
                   <p>
-                    🇩🇰 Signatur-bagværk fra nær og fjern 🇭🇺 Jellegzetes
-                    péksütemények közelről és távolról 🇬🇧 Signature pastries
-                    from around the world
+                    <div>🇩🇰 Signatur-bagværk fra nær og fjern</div>
+                    <div>🇭🇺 Jellegzetes péksütemények közelről és távolról</div>
+                    <div>🇬🇧 Signature pastries from around the world</div>
                   </p>
                   <div>
                     <a target="_blank"> </a>
@@ -534,17 +561,18 @@
                 <div class="img-position">
                   <img
                     class="img-icon"
-                    src="/img/blueprint-img/set_2/set_2_plates.png"
+                    src="img/blueprint-img/set_2/set_2_plates.png"
                   />
                 </div>
                 <li class="dot">
-                  <div>
+                  <div style="font-family: 'Raleway'">
                     <p>17:30</p>
                     <p>Middag | Vacsora | Dinner</p>
                   </div>
                   <p>
-                    🇩🇰 Helstegt pattegris med tilbehør 🇭🇺 Sült malac köretekkel
-                    🇬🇧 Roast suckling pig with side dishes
+                    <div>🇩🇰 Helstegt pattegris med tilbehør</div>
+                    <div>🇭🇺 Sült malac köretekkel</div>
+                    <div>🇬🇧 Roast suckling pig with side dishes</div>
                   </p>
                   <div>
                     <a target="_blank"> </a>
@@ -555,11 +583,11 @@
                 <div class="img-position">
                   <img
                     class="img-icon"
-                    src="/img/blueprint-img/set_2/set_2_node.png"
+                    src="img/blueprint-img/set_2/set_2_node.png"
                   />
                 </div>
                 <li class="dot">
-                  <div>
+                  <div style="font-family: 'Raleway'">
                     <p>22:00</p>
                     <p>
                       Fest &amp; Hygge | Buli &amp; Szórakoz | Party &amp; Fun
@@ -574,16 +602,16 @@
             </ol>
           </div>
           <div>
-            <label> 21/04/2024 </label>
+            <label class="agenda-date-label"> 21/04/2024 </label>
             <ol>
               <div class="img-position">
                 <img
                   class="img-icon"
-                  src="/img/blueprint-img/set_2/set_2_plates.png"
+                  src="img/blueprint-img/set_2/set_2_plates.png"
                 />
               </div>
               <li class="dot">
-                <div>
+                <div style="font-family: 'Raleway'">
                   <p>10:00</p>
                   <p>Brunch | Villásreggeli | Brunch</p>
                 </div>
@@ -597,6 +625,7 @@
         </div>
       </div>
     </section>
+    <!-- WEDDING SECTION BEGIN -->
     <section
       class="hero is-black is-bold is-fullheight"
       id="location"
@@ -620,6 +649,7 @@
         allowfullscreen
       ></iframe>
     </section>
+    <!-- WEDDING SECTION BEGIN -->
     <section
       class="hero is-danger is-bold is-fullheight"
       id="celebrate"
