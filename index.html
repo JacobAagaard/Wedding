@@ -234,7 +234,11 @@
         max-width: 40px;
         margin-top: -4px;
       }
-      li {
+      .img-size {
+        max-width: 50px;
+        max-height: 50px;
+      }
+      li.dot {
         display: block;
         position: relative;
         top: 0;
@@ -503,7 +507,7 @@
         "
       ></div>
       <div class="hero-body">
-        <div id="agenda" class="container has-text-centered">
+        <div id="agenda" class="container">
           <h2
             class="title is-2 has-text-centered"
             style="font-family: 'Merriweather'"
@@ -612,59 +616,56 @@
     </section>
     <!-- PROGRAM SECTION BEGIN -->
     <section
-      class="hero is-black is-bold is-fullheight"
+      class="hero is-white is-bold is-fullheight"
       id="location"
       style="position: relative"
     >
       <div class="hero-body">
         <div id="program" class="container has-text-centered">
-          <div
-            style="
-              border-bottom-color: rgb(33, 39, 56);
-              margin-bottom: 48px;
-              padding-bottom: 48px;
-              border-bottom: 1px solid;
-            "
-          >
-            <div class="img-position">
-              <img
-                class="img-icon"
-                src="img/blueprint-img/set_2/set_2_couple.png"
-              />
-            </div>
-            <div>
-              <h2 class="title is-3">Vielse | Esküvő | Wedding</h2>
-              <p>
-                <span>
-                  <p>
-                    🇩🇰 Vi starter med den mere formelle del af dagen; selve
-                    vielsen, som foregår i
-                  </p>
-                  <p>🇭🇺 A napot a házasságkötéssel kezdjük a következö címen</p>
-                  <p>
-                    🇬🇧 We start off with the more formal part; the wedding
-                    itself, taking place at
-                  </p>
-                  <p><br /></p>
-                  <p><b>Christians Kirke,</b></p>
-                  <p><b>Strandgade 1, 1401 København K</b></p>
-                  <p><br /></p
-                ></span>
-              </p>
-            </div>
-            <div>
-              <a
-                href="https://www.christianskirke.dk/page/409/frederiks-tyske-kirke"
-                target="_blank"
-                type="button"
-              >
-                www.christianskirke.dk
-              </a>
-            </div>
+          <div class="img-position">
+            <img
+              class="img-size"
+              src="img/blueprint-img/set_2/set_2_couple.png"
+            />
           </div>
           <div>
-            <div>
-              <img src="img/blueprint-img/set_2/set_2_arch.png" />
+            <h2 class="title is-3">Vielse | Esküvő | Wedding</h2>
+            <p>
+              <span>
+                <p>
+                  🇩🇰 Vi starter med den mere formelle del af dagen; selve
+                  vielsen, som foregår i
+                </p>
+                <p>🇭🇺 A napot a házasságkötéssel kezdjük a következö címen</p>
+                <p>
+                  🇬🇧 We start off with the more formal part; the wedding itself,
+                  taking place at
+                </p>
+                <br />
+                <p><b>Christians Kirke,</b></p>
+                <p><b>Strandgade 1, 1401 København K</b></p>
+                <br />
+              </span>
+            </p>
+          </div>
+          <div style="margin-bottom: 48px; padding-bottom: 48px">
+            <hr />
+          </div>
+          <div>
+            <a
+              href="https://www.christianskirke.dk/page/409/frederiks-tyske-kirke"
+              target="_blank"
+              type="button"
+            >
+              www.christianskirke.dk
+            </a>
+          </div>
+          <div>
+            <div class="has-text-centered">
+              <img
+                class="img-size"
+                src="img/blueprint-img/set_2/set_2_arch.png"
+              />
             </div>
             <div>
               <h2 class="title is-3">
@@ -681,11 +682,12 @@
                     🇬🇧 Followed by dinner and party in idyllic settings, taking
                     place at
                   </p>
-                  <p><br /></p>
+                  <br />
                   <p><b>Kulhusekolonien,</b></p>
                   <p>
                     <b>Kulhusvej 209, 3630 Jægerspris</b>
                   </p>
+                  <br />
                 </span>
               </p>
             </div>
@@ -731,14 +733,11 @@
       <div class="hero-body">
         <div class="container">
           <div id="sleepover">
-            <span class="icon is-huge">
-              <svg class="fa icon-moon-o">
-                <use
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  xlink:href="#icon-moon-o"
-                ></use>
-              </svg>
-            </span>
+            <div class="has-text-centered">
+              <div>
+                <img class="img-size" src="img/blueprint-img/set_2/set_2_bed.png" />
+              </div>
+            </div>
             <h2 class="title is-3 has-text-centered">
               Overnatning | Szállás | Sleepover
             </h2>
@@ -840,8 +839,11 @@
       <div class="hero-body">
         <div class="container">
           <div id="adult-party" class="container has-text-centered">
-            <div>
-              <img src="img/blueprint-img/set_2/set_2_champagne2.png" />
+            <div class="has-text-centered">
+              <img
+                class="img-size"
+                src="img/blueprint-img/set_2/set_2_champagne2.png"
+              />
             </div>
             <h2 class="title is-3 has-text-centered">
               Voksenfest | Kizárólag Felnöttek | Adult Party
@@ -920,7 +922,7 @@
             class="slider__item"
             style="
               height: 100vh;
-              background: url(images/party-people2.jpg) no-repeat center center;
+              background: url(images/new-orleans.jpeg) no-repeat center center;
               background-size: cover;
             "
           ></div>
@@ -936,7 +938,7 @@
             class="slider__item"
             style="
               height: 100vh;
-              background: url(images/family.jpg) no-repeat center center;
+              background: url(images/party-people2.jpg) no-repeat center center;
               background-size: cover;
             "
           ></div>
@@ -967,6 +969,7 @@
         </div>
       </div>
     </section>
+    <!-- TOASTMASTER SECTION -->
     <section
       class="hero is-warning is-bold is-fullheight"
       id="accomodation"
