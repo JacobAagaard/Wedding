@@ -1351,6 +1351,15 @@ strong {
     max-width: none;
     width: auto;
   }
+  .title.is-1 {
+    font-size: 4rem;
+  }
+  .title.is-2 {
+    font-size: 3.5rem;
+  }
+  .title.is-3 {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (min-width: 1192px) {
@@ -1622,7 +1631,7 @@ a.nav-item.is-tab.is-active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 3.25rem;
+  height: 4rem;
   position: relative;
   text-align: center;
   z-index: 10;
