@@ -1347,6 +1347,9 @@ strong {
     max-width: 960px;
     width: 960px;
   }
+  .container.img {
+    padding: 0 5rem 5rem;
+  }
   .container.is-fluid {
     margin: 0 20px;
     max-width: none;
@@ -1363,6 +1366,12 @@ strong {
   }
   .title.is-4 {
     font-size: 2.5rem;
+  }
+  .title.is-5 {
+    font-size: 2rem;
+  }
+  .title.is-6 {
+    font-size: 1.5rem;
   }
 }
 
@@ -3074,7 +3083,7 @@ a.nav-item.is-tab.is-active {
     #4787b1 0%,
     #ced0c2 71%,
     #a2c5d8 100%
-  )
+  );
 }
 
 @media screen and (max-width: 768px) {
