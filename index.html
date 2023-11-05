@@ -281,12 +281,6 @@
         letter-spacing: 0.12em;
         -webkit-font-smoothing: antialiased;
       }
-      @media screen and (min-width: 1024px) {
-        #agenda.container {
-          max-width: 66.6%;
-        }
-      }
-      /* WISHLIST STYLES */
       .wishlist-grid {
         max-width: 1200px;
         margin: 0 auto;
@@ -295,37 +289,28 @@
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       }
       .wishlist-card {
-        background-color: dodgerblue;
-        color: white;
         padding: 1rem;
         cursor: pointer;
+      }
+      .wishlist-card a {
+        text-decoration: none;
+        color: #000;
       }
       .wish-img {
         width: 100%;
         border-radius: 16px;
-        height: 350px;
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
-        transform: scale(1);
-        transition: transform 0.3s ease-out;
+        height: 300px;
+        margin-bottom: 1rem;
+        object-fit: cover;
       }
-      @media screen and (max-width: 1290px) {
+      @media screen and (min-width: 1024px) {
+        #agenda.container {
+          max-width: 66.6%;
+        }
         .wish-img {
-          height: 225px;
+          height: 350px;
         }
       }
-      @media screen and (max-width: 1450px) {
-        .wish-img {
-          height: 225px;
-        }
-      }
-      @media screen and (max-width: 1690px) {
-        .wish-img {
-          height: 250px;
-        }
-      }
-
       /* BIG DAY STYLES END */
     </style>
     <script>
@@ -881,7 +866,7 @@
     </section>
 
     <!-- ADULT PARTY SECTION BEGIN -->
-    <section class="hero is-white is-bold" style="position: relative">
+    <section class="hero is-white is-bold is-info" style="position: relative">
       <div class="hero-body">
         <div id="adult-party" class="container">
           <div class="has-text-centered">
@@ -939,10 +924,7 @@
           >
         </div>
       </div>
-      <img
-        class="container img"
-        src="https://storage.googleapis.com/big-day/images/2e529ca9-3fc7-4b62-9e15-a99cc37f4597/pKSksBRzDsTwYrKKAnR9v170lAOIrRV8GZ0yl9vV.png"
-      />
+      <img class="container img" src="images/dresscode.png" />
     </section>
 
     <section
@@ -1011,10 +993,7 @@
       </div>
     </section>
     <!-- TOASTMASTER SECTION -->
-    <section
-      class="hero is-warning is-bold is-fullheight"
-      style="position: relative"
-    >
+    <section class="hero is-warning is-bold" style="position: relative">
       <div class="hero-body">
         <div
           id="toastmaster"
@@ -1051,77 +1030,6 @@
         </div>
       </div>
     </section>
-    <!-- WISHLIST SECTION BEGIN -->
-    <section
-      class="hero is-white is-bold is-fullheight"
-      style="position: relative"
-    >
-      <div class="hero-body">
-        <div class="container">
-          <div id="wishlist" class="container">
-            <div>
-              <div class="has-text-centered">
-                <img
-                  class="img-size"
-                  src="img/blueprint-img/set_1/set_1_letter.png"
-                />
-              </div>
-              <h2 class="title is-3 has-text-centered">
-                Ønsker | Kívánságaink | Wishlist
-              </h2>
-            </div>
-            <div class="wishlist-grid">
-              <div class="wishlist-card">
-                <div data-v-35783be7="" class="wish-img" style="background-image: url(&quot;images/wishlist-guestbook.jpgquot;);"></div>
-                <strong>Gæstebog | Vendégkönyv | Guestbook</strong>
-                <p>
-                  Til at forevige dagen igennem jeres hilsner | ? | To
-                  perpetuate the day through your greetings
-                </p>
-              </div>
-              <div class="wishlist-card">
-                <img class="wish-img" src="images/wishlist-selfiebox.jpg" />
-                <strong>Selfieboks | Szelfi fülki | Selfie booth</strong>
-                <p>
-                  Alternative:
-                  <a href="https://selfiecam.dk/">https://selfiecam.dk/</a>
-                  <a href="https://myselfie.dk/">https://myselfie.dk/</a>
-                </p>
-              </div>
-              <div class="wishlist-card">
-                <img class="wish-img" src="images/wishlist-money.jpg" />
-                <strong>Penge | Pénz | Money</strong>
-                <p>
-                  Selvvalgt donation | Önválogatott adomány | Self-selectef
-                  donation
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- SECTION TEMPLATE -->
-    <!-- <section
-      class="hero is-white is-bold is-fullheight"
-      style="position: relative"
-    >
-      <div class="hero-body">
-        <div class="container">
-          INSERT DIV WITH ID HERE
-        </div>
-      </div>
-    </section> -->
-
-    <!-- is-danger section with heartbeat -->
-    <!-- <span class="icon heartbeat is-huge">
-      <svg class="fa icon-heart-o">
-        <use
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          xlink:href="#icon-heart-o"
-        ></use>
-      </svg>
-    </span> -->
 
     <!-- RSVP SECTION BEGIN -->
     <section
@@ -1162,6 +1070,128 @@
         </div>
       </div>
     </section>
+
+    <!-- WISHLIST SECTION BEGIN -->
+    <section class="hero is-white is-bold" style="position: relative">
+      <div class="hero-body">
+        <div class="container">
+          <div id="wishlist" class="container">
+            <div class="has-text-centered">
+              <img
+                class="img-size"
+                src="img/blueprint-img/set_1/set_1_letter.png"
+              />
+            </div>
+            <h2 class="title is-3 has-text-centered">
+              Ønsker | Kívánságaink | Wishlist
+            </h2>
+            <div class="wishlist-grid">
+              <div class="wishlist-card">
+                <a
+                  href="https://dreamshop2u.dk/5239-brun-gaestebog-guld-hjerte.html"
+                  target="_blank"
+                >
+                  <img class="wish-img" src="images/wishlist-guestbook.jpg" />
+                  <strong>Gæstebog | Vendégkönyv | Guestbook</strong>
+                  <p>🇩🇰 Til at forevige dagen igennem jeres hilsner</p>
+                  <p>🇭🇺 Hogy megörökítse a napot az üdvözletéveltok</p>
+                  <p>🇬🇧 To perpetuate the day through your greetings</p>
+                </a>
+              </div>
+              <div class="wishlist-card">
+                <img class="wish-img" src="images/wishlist-selfiebox.jpg" />
+                <strong>Selfieboks | Szelfi fülki | Selfie booth</strong>
+                <p>
+                  Alternative:
+                  <a href="https://selfiecam.dk/">https://selfiecam.dk/</a>
+                  <a href="https://myselfie.dk/">https://myselfie.dk/</a>
+                </p>
+              </div>
+              <div class="wishlist-card">
+                <img class="wish-img" src="images/wishlist-money.jpg" />
+                <strong>Penge | Pénz | Money</strong>
+                <p>🇩🇰 Selvvalgt donation</p>
+                <p>🇭🇺 Önválogatott adomány</p>
+                <p>🇬🇧 Self-selected donation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="hero is-white is-bold is-fullheight"
+      style="position: relative"
+    >
+      <div class="hero-body">
+        <div id="parking" class="container">
+          <h2 class="title is-3 has-text-centered">
+            Parkering | Parkolás | Parking
+          </h2>
+          <span>
+            <p>
+              🇩🇰 <strong>Christians Kirke:</strong> Da vi er midt i København
+              kan det være svært at finde parkering tæt på kirken, så sørg for
+              at komme i god tid inden vielsen starter.
+            </p>
+            <p>
+              <strong>Kulhuse kolonien:</strong> Da vi er i Udkantsdanmark er
+              det nemt at finde parkering lige ved siden af kolonien, på
+              parkeringspladsen på den anden side af vejen, som vist på
+              screenshot fra Google Maps.
+            </p>
+            <br />
+            <p>
+              🇭🇺
+              <strong>Christians Kirke (Christián templomja):</strong>
+              Mivel Koppenhága közepén talalható a templom, kérjük idöben
+              gyertek mivel nem mindig egyszerü parkolóhelyet találni.
+            </p>
+            <p>
+              <strong>Kulhuse kolonien:</strong> Mivel vidéken lesz az ünnepség,
+              itt egyszerü a parkolás. Egy nagy terület van a koloniával
+              szemben, ahogy a Google Mapson látható.
+            </p>
+            <br />
+            <p>
+              🇬🇧 <strong>Christians Kirke:</strong> Since we are in the centre
+              of Copenhagen finding a parking space close to the church can be
+              cumbersome, hence make sure to arrive in due time before the
+              wedding ceremony begins.
+            </p>
+            <p>
+              <strong>Kulhuse kolonien:</strong> Since we are in the countryside
+              parking will be easy peasy as there is an enormous gravel area
+              just across the road from the venue, as shown in the screenshot
+              from Google Maps.
+            </p>
+          </span>
+        </div>
+      </div>
+      <img class="container img" src="images/parking.jpg" />
+    </section>
+
+    <!-- SECTION TEMPLATE -->
+    <!-- <section
+      class="hero is-white is-bold is-fullheight"
+      style="position: relative"
+    >
+      <div class="hero-body">
+        INSERT DIV WITH ID HERE
+      </div>
+    </section> -->
+
+    <!-- is-danger section with heartbeat -->
+    <!-- <span class="icon heartbeat is-huge">
+      <svg class="fa icon-heart-o">
+        <use
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xlink:href="#icon-heart-o"
+        ></use>
+      </svg>
+    </span> -->
+
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: none">
       <symbol id="icon-angle-down" viewBox="0 0 18 28">
         <path
