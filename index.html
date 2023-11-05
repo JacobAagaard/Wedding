@@ -238,6 +238,17 @@
         max-width: 50px;
         max-height: 50px;
       }
+      .img-circle {
+        border-radius: 50%;
+      }
+      .image {
+        margin-bottom: 24px;
+        width: 250px;
+        height: 250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
       li.dot {
         display: block;
         position: relative;
@@ -275,6 +286,46 @@
           max-width: 66.6%;
         }
       }
+      /* WISHLIST STYLES */
+      .wishlist-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+      .wishlist-card {
+        background-color: dodgerblue;
+        color: white;
+        padding: 1rem;
+        cursor: pointer;
+      }
+      .wish-img {
+        width: 100%;
+        border-radius: 16px;
+        height: 350px;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        transform: scale(1);
+        transition: transform 0.3s ease-out;
+      }
+      @media screen and (max-width: 1290px) {
+        .wish-img {
+          height: 225px;
+        }
+      }
+      @media screen and (max-width: 1450px) {
+        .wish-img {
+          height: 225px;
+        }
+      }
+      @media screen and (max-width: 1690px) {
+        .wish-img {
+          height: 250px;
+        }
+      }
+
       /* BIG DAY STYLES END */
     </style>
     <script>
@@ -743,89 +794,86 @@
             <h2 class="title is-3 has-text-centered">
               Overnatning | Szállás | Sleepover
             </h2>
-            <p>
-              <span
-                ><p>
-                  🇩🇰 Koloniens førstesal har sovepladser til 74 voksne (50
-                  permanente senge + 24 flytbare madrasser), fordelt på 10 rum.
-                  Værelserne har op til 8 senge, så man skal være indstillet på
-                  at dele værelse med andre. Giv besked i RSVP, nederst på
-                  siden, om du/I vil have en seng, og evt. hvem af de andre
-                  gæster du vil dele værelse med, ved at indtaste navne i
-                  følgende
+            <span>
+              <p>
+                🇩🇰 Koloniens førstesal har sovepladser til 74 voksne (50
+                permanente senge + 24 flytbare madrasser), fordelt på 10 rum.
+                Værelserne har op til 8 senge, så man skal være indstillet på at
+                dele værelse med andre. Giv besked i RSVP, nederst på siden, om
+                du/I vil have en seng, og evt. hvem af de andre gæster du vil
+                dele værelse med, ved at indtaste navne i følgende
+                <a
+                  href="https://docs.google.com/spreadsheets/d/1NCEkJ3mfZxLcs8epNmUniZ5SYVqQXhJw-XIytsqhlOI/edit?usp=drivesdk"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Excel ark</a
+                >
+                ➡️✍️ Så gør vi vores bedste for at få det til at gå op.
+              </p>
+              <p>
+                🇭🇺 A helyszín elsö emeletén 74 alvóhely található (50 beépitett
+                ágy és 24 mozgatható matrac), 10 szobára elosztva. A legtöbb
+                szoba 6-8 személyes így fel kell készülni arra hogy másokkal
+                megossza tok egy szobát. Az oldal alján az RSVPbe jelezzétek
+                kérlek, hogyha szeretnétek alvóhelyet foglalni és esetleg hogy
+                kivel szeretnél szobát osztani. Írja be a nevét
+                <a
+                  href="https://docs.google.com/spreadsheets/d/1NCEKJ3mfZxLcs8epNmUniZ5SYVqQXhJw-XIytsqhlOI/edit?usp=drivesdk"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >a táblázatban</a
+                >
+                elérhető szobákba ➡️✍️ Ezután mindent megteszünk annak
+                érdekében, hogy mindenki számára működjön.
+              </p>
+              <p>
+                🇬🇧 The first floor of the venue contains sleeping spots for 74
+                adults (50 permanent beds + 24 movable mattresses), split out on
+                10 rooms. The rooms have up to 8 beds, so be prepared to share
+                the room with others - hostel style. Let us know in the RSVP
+                section at the bottom of the page if you would like to book a
+                bed and optionally write whom of the other guests you would
+                prefer to share room with. Insert your name in the available
+                rooms in
+                <a
+                  href="https://docs.google.com/spreadsheets/d/1NCEkJ3mfZxLcs8epNmUniZ5SYVqQXhJw-XIytsqhlOI/edit?usp=drivesdk"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >this spreadsheet</a
+                >
+                ➡️✍️ We will then do our best to make it work for everyone.
+              </p>
+              <p><br /></p>
+              <p>🇩🇰 Alternative overnatningsmuligheder</p>
+              <p>🇭🇺 Alternatív szálláslehetőségek</p>
+              <p>🇬🇧 Alternative accomodation options:</p>
+              <ul>
+                <li>
                   <a
-                    href="https://docs.google.com/spreadsheets/d/1NCEkJ3mfZxLcs8epNmUniZ5SYVqQXhJw-XIytsqhlOI/edit?usp=drivesdk"
+                    href="https://www.dcu.dk/da/dcu-camping/kulhuse"
                     rel="noopener noreferrer"
                     target="_blank"
-                    >Excel ark</a
+                    >DCU Camping Kulhuse</a
                   >
-                  ➡️✍️ Så gør vi vores bedste for at få det til at gå op.
-                </p>
-                <p>
-                  🇭🇺 A helyszín elsö emeletén 74 alvóhely található (50
-                  beépitett ágy és 24 mozgatható matrac), 10 szobára elosztva. A
-                  legtöbb szoba 6-8 személyes így fel kell készülni arra hogy
-                  másokkal megossza tok egy szobát. Az oldal alján az RSVPbe
-                  jelezzétek kérlek, hogyha szeretnétek alvóhelyet foglalni és
-                  esetleg hogy kivel szeretnél szobát osztani. Írja be a nevét
+                </li>
+                <li>
                   <a
-                    href="https://docs.google.com/spreadsheets/d/1NCEKJ3mfZxLcs8epNmUniZ5SYVqQXhJw-XIytsqhlOI/edit?usp=drivesdk"
+                    href="https://www.airbnb.com/s/Kulhuse--J%C3%A6gerspris/homes?tab_id=home_tab&amp;flexible_trip_lengths%5B%5D=one_week&amp;monthly_start_date=2023-09-01&amp;monthly_length=3&amp;price_filter_input_type=0&amp;price_filter_num_nights=5&amp;channel=EXPLORE&amp;refinement_paths%5B%5D=%2Fhomes&amp;place_id=ChIJo5CDLnByUkYRBANbVKSOugM&amp;query=Kulhuse%2C%20J%C3%A6gerspris&amp;date_picker_type=calendar&amp;checkin=2024-04-19&amp;checkout=2024-04-21&amp;adults=2&amp;search_type=unknown"
                     rel="noopener noreferrer"
                     target="_blank"
-                    >a táblázatban</a
+                    >Airbnb</a
                   >
-                  elérhető szobákba ➡️✍️ Ezután mindent megteszünk annak
-                  érdekében, hogy mindenki számára működjön.
-                </p>
-                <p>
-                  🇬🇧 The first floor of the venue contains sleeping spots for 74
-                  adults (50 permanent beds + 24 movable mattresses), split out
-                  on 10 rooms. The rooms have up to 8 beds, so be prepared to
-                  share the room with others - hostel style. Let us know in the
-                  RSVP section at the bottom of the page if you would like to
-                  book a bed and optionally write whom of the other guests you
-                  would prefer to share room with. Insert your name in the
-                  available rooms in
+                </li>
+                <li>
                   <a
-                    href="https://docs.google.com/spreadsheets/d/1NCEkJ3mfZxLcs8epNmUniZ5SYVqQXhJw-XIytsqhlOI/edit?usp=drivesdk"
+                    href="https://bautahoj.dk/vaerelser/"
                     rel="noopener noreferrer"
                     target="_blank"
-                    >this spreadsheet</a
+                    >Bautahøj Kursuscenter</a
                   >
-                  ➡️✍️ We will then do our best to make it work for everyone.
-                </p>
-                <p><br /></p>
-                <p>🇩🇰 Alternative overnatningsmuligheder</p>
-                <p>🇭🇺 Alternatív szálláslehetőségek</p>
-                <p>🇬🇧 Alternative accomodation options:</p>
-                <ul>
-                  <li>
-                    <a
-                      href="https://www.dcu.dk/da/dcu-camping/kulhuse"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      >DCU Camping Kulhuse</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.airbnb.com/s/Kulhuse--J%C3%A6gerspris/homes?tab_id=home_tab&amp;flexible_trip_lengths%5B%5D=one_week&amp;monthly_start_date=2023-09-01&amp;monthly_length=3&amp;price_filter_input_type=0&amp;price_filter_num_nights=5&amp;channel=EXPLORE&amp;refinement_paths%5B%5D=%2Fhomes&amp;place_id=ChIJo5CDLnByUkYRBANbVKSOugM&amp;query=Kulhuse%2C%20J%C3%A6gerspris&amp;date_picker_type=calendar&amp;checkin=2024-04-19&amp;checkout=2024-04-21&amp;adults=2&amp;search_type=unknown"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      >Airbnb</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://bautahoj.dk/vaerelser/"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      >Bautahøj Kursuscenter</a
-                    >
-                  </li>
-                </ul>
-              </span>
-            </p>
+                </li>
+              </ul>
+            </span>
           </div>
         </div>
       </div>
@@ -833,93 +881,70 @@
     </section>
 
     <!-- ADULT PARTY SECTION BEGIN -->
-    <section
-      class="hero is-white is-bold is-fullheight"
-      style="position: relative"
-    >
+    <section class="hero is-white is-bold" style="position: relative">
       <div class="hero-body">
-        <div class="container">
-          <div id="adult-party" class="container">
-            <div class="has-text-centered">
-              <img
-                class="img-size"
-                src="img/blueprint-img/set_2/set_2_champagne2.png"
-              />
-            </div>
-            <h2 class="title is-3 has-text-centered">
-              Voksenfest | Kizárólag Felnöttek | Adult Party
-            </h2>
-            <p>
-              <span>
-                <p>
-                  🇩🇰 For at alle gæster kan være så feststemte som muligt, er
-                  middag og fest kun for voksne (og helt små amme/flaske babyer,
-                  I ved selv hvem I er).
-                </p>
-                <p>
-                  🇭🇺 Mivel szeretnénk, hogy minden vendég a lehetö legjobban
-                  érezze magát, így szeretnénk megkérni bennetek, hogy gyermeket
-                  ne hozzatok az eseményre (kivételt képeznek a pici babák).
-                </p>
-                <p>
-                  🇬🇧 In order for all guests to be as festive as possible,
-                  dinner and party are only for adults (and very small
-                  nursing/bottle babies, you know who you are).
-                </p>
-              </span>
-            </p>
-            <div>
-              <a target="_blank" type="button"> </a>
-            </div>
+        <div id="adult-party" class="container">
+          <div class="has-text-centered">
+            <img
+              class="img-size"
+              src="img/blueprint-img/set_2/set_2_champagne2.png"
+            />
+          </div>
+          <h2 class="title is-3 has-text-centered">
+            Voksenfest | Kizárólag Felnöttek | Adult Party
+          </h2>
+          <p>
+            <span>
+              <p>
+                🇩🇰 For at alle gæster kan være så feststemte som muligt, er
+                middag og fest kun for voksne (og helt små amme/flaske babyer, I
+                ved selv hvem I er).
+              </p>
+              <p>
+                🇭🇺 Mivel szeretnénk, hogy minden vendég a lehetö legjobban
+                érezze magát, így szeretnénk megkérni bennetek, hogy gyermeket
+                ne hozzatok az eseményre (kivételt képeznek a pici babák).
+              </p>
+              <p>
+                🇬🇧 In order for all guests to be as festive as possible, dinner
+                and party are only for adults (and very small nursing/bottle
+                babies, you know who you are).
+              </p>
+            </span>
+          </p>
+          <div>
+            <a target="_blank" type="button"> </a>
           </div>
         </div>
       </div>
       <img class="container img" src="images/adult-party.jpg" />
     </section>
 
-    <section
-      class="hero is-white is-bold is-fullheight"
-      style="position: relative"
-    >
+    <section class="hero is-white is-bold" style="position: relative">
       <div class="hero-body">
-        <div class="container">
-          <div id="dress-code" class="container has-text-centered">
-            <div>
-              <div>
-                <img
-                  class="img-size"
-                  src="img/blueprint-img/set_2/set_2_shoes.png"
-                />
-              </div>
-              <h2 class="title is-3 has-text-centered">
-                Dresscode | Kötelező Viselet | Dress code
-              </h2>
-              <p>
-                <span
-                  ><p>🇩🇰 Hvad end du føler dig komfortabel i</p>
-                  <p>🇭🇺 Bármi amiben jól érzed magad</p>
-                  <p>🇬🇧 Whatever you feel comfortable wearing</p></span
-                >
-              </p>
-              <div>
-                <a target="_blank" type="button"> </a>
-              </div>
-            </div>
-            <div>
-              <img
-                src="https://storage.googleapis.com/big-day/images/2e529ca9-3fc7-4b62-9e15-a99cc37f4597/pKSksBRzDsTwYrKKAnR9v170lAOIrRV8GZ0yl9vV.png"
-              />
-            </div>
+        <div id="dress-code" class="container has-text-centered">
+          <div>
+            <img
+              class="img-size"
+              src="img/blueprint-img/set_2/set_2_shoes.png"
+            />
           </div>
+          <h2 class="title is-3 has-text-centered">
+            Dresscode | Kötelező Viselet | Dress code
+          </h2>
+          <span
+            ><p>🇩🇰 Hvad end du føler dig komfortabel i</p>
+            <p>🇭🇺 Bármi amiben jól érzed magad</p>
+            <p>🇬🇧 Whatever you feel comfortable wearing</p></span
+          >
         </div>
       </div>
+      <img
+        class="container img"
+        src="https://storage.googleapis.com/big-day/images/2e529ca9-3fc7-4b62-9e15-a99cc37f4597/pKSksBRzDsTwYrKKAnR9v170lAOIrRV8GZ0yl9vV.png"
+      />
     </section>
 
-    <section
-      class="hero is-fullheight"
-      id="gallery"
-      style="background: none"
-    ></section>
     <section
       class="hero is-black is-bold is-fullheight"
       style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 1"
@@ -996,30 +1021,37 @@
           class="container has-text-centered"
           style="overflow: hidden"
         >
+          <img
+            class="img-size has-text-centered"
+            src="img/blueprint-img/set_2/set_2_champagne.png"
+          />
+          <h2 class="title is-3 has-text-centered">
+            Skålemester | Házigazda | Toastmaster
+          </h2>
           <div>
-            <div>
-              <img
-                class="img-size has-text-centered"
-                src="img/blueprint-img/set_2/set_2_champagne.png"
-              />
-            </div>
-            <h2 class="title is-3 has-text-centered">
-              Skålemester | Házigazda | Toastmaster
-            </h2>
-            <h2 class="title is-5">
+            <h2 class="subtitle is-5">
               Styrer talerækken | Beszédeket Konferál &amp; Szórakoztat |
               Facilitates Speeches &amp; Entertainment
             </h2>
           </div>
-          <p>Rasmus Aagaard</p>
-          <a href="tel:+45 60 80 32 35" target="_blank">+45 60 80 32 35</a>
-          <a href="mailto:aagaard-1995@live.dk" target="_blank">
-            aagaard-1995@live.dk
-          </a>
+          <div>
+            <img class="image img-circle" src="images/toastmaster.jpg" />
+          </div>
+          <div>
+            <strong>Rasmus Aagaard</strong>
+          </div>
+          <div>
+            <a href="tel:+45 60 80 32 35" target="_blank">+45 60 80 32 35</a>
+          </div>
+          <div>
+            <a href="mailto:aagaard-1995@live.dk" target="_blank">
+              aagaard-1995@live.dk
+            </a>
+          </div>
         </div>
       </div>
     </section>
-    <!-- WISHLIST EECTION BEGIN -->
+    <!-- WISHLIST SECTION BEGIN -->
     <section
       class="hero is-white is-bold is-fullheight"
       style="position: relative"
@@ -1028,7 +1060,7 @@
         <div class="container">
           <div id="wishlist" class="container">
             <div>
-              <div>
+              <div class="has-text-centered">
                 <img
                   class="img-size"
                   src="img/blueprint-img/set_1/set_1_letter.png"
@@ -1038,47 +1070,32 @@
                 Ønsker | Kívánságaink | Wishlist
               </h2>
             </div>
-            <div>
-              <div>
-                <p>Gæstebog | Vendégkönyv | Guestbook</p>
+            <div class="wishlist-grid">
+              <div class="wishlist-card">
+                <div data-v-35783be7="" class="wish-img" style="background-image: url(&quot;images/wishlist-guestbook.jpgquot;);"></div>
+                <strong>Gæstebog | Vendégkönyv | Guestbook</strong>
                 <p>
                   Til at forevige dagen igennem jeres hilsner | ? | To
                   perpetuate the day through your greetings
                 </p>
               </div>
-              <div>
-                <div>
-                  <p>Selfieboks | Szelfi fülki | Selfie booth</p>
-                  <p>
-                    Alternative:
-                    <a href="https://selfiecam.dk/">https://selfiecam.dk/</a>
-                    <a href="https://myselfie.dk/">https://myselfie.dk/</a>
-                  </p>
-                </div>
+              <div class="wishlist-card">
+                <img class="wish-img" src="images/wishlist-selfiebox.jpg" />
+                <strong>Selfieboks | Szelfi fülki | Selfie booth</strong>
+                <p>
+                  Alternative:
+                  <a href="https://selfiecam.dk/">https://selfiecam.dk/</a>
+                  <a href="https://myselfie.dk/">https://myselfie.dk/</a>
+                </p>
               </div>
-              <div>
-                <div>
-                  <p>Penge | Pénz | Money</p>
-                  <p>
-                    Selvvalgt donation | Önválogatott adomány | Self-selectef
-                    donation
-                  </p>
-                </div>
+              <div class="wishlist-card">
+                <img class="wish-img" src="images/wishlist-money.jpg" />
+                <strong>Penge | Pénz | Money</strong>
+                <p>
+                  Selvvalgt donation | Önválogatott adomány | Self-selectef
+                  donation
+                </p>
               </div>
-            </div>
-            <div>
-              <div>
-                <button type="button">
-                  <i>close</i>
-                </button>
-              </div>
-              <section>
-                <div>
-                  <h3></h3>
-                  <p></p>
-                  <a target="_blank" type="button"> Link </a>
-                </div>
-              </section>
             </div>
           </div>
         </div>
