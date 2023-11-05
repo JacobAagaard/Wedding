@@ -215,6 +215,9 @@
           background-image: url(images/proposal.jpg);
         }
       }
+      p {
+        font-size: large;
+      }
 
       /* BIG DAY STYLES BEGIN */
       ol {
@@ -230,9 +233,9 @@
         left: -72px;
       }
       .img-icon {
-        max-height: 40px;
-        max-width: 40px;
-        margin-top: -4px;
+        max-height: 50px;
+        max-width: 50px;
+        margin-top: -13px;
       }
       .img-size {
         max-width: 50px;
@@ -564,10 +567,8 @@
                   />
                 </div>
                 <li class="dot">
-                  <div style="font-family: 'Raleway'">
-                    <p class="agenda-time">12:00</p>
-                    <p>Vielse | Esküvő | Wedding</p>
-                  </div>
+                  <p class="agenda-time">12:00</p>
+                  <p>Vielse | Esküvő | Wedding</p>
                   <span>
                     <div>🇩🇰 Det bliver magisk</div>
                     <div>🇭🇺 Varázslatos lesz</div>
@@ -583,10 +584,8 @@
                   />
                 </div>
                 <li class="dot">
-                  <div style="font-family: 'Raleway'">
-                    <p class="agenda-time">15:00</p>
-                    <p>Kaffe | Kávé | Coffee</p>
-                  </div>
+                  <p class="agenda-time">15:00</p>
+                  <p>Kaffe | Kávé | Coffee</p>
                   <span>
                     <div>🇩🇰 Signatur-bagværk fra nær og fjern</div>
                     <div>🇭🇺 Jellegzetes péksütemények közelről és távolról</div>
@@ -602,10 +601,8 @@
                   />
                 </div>
                 <li class="dot">
-                  <div style="font-family: 'Raleway'">
-                    <p class="agenda-time">17:30</p>
-                    <p>Middag | Vacsora | Dinner</p>
-                  </div>
+                  <p class="agenda-time">17:30</p>
+                  <p>Middag | Vacsora | Dinner</p>
                   <span>
                     <div>🇩🇰 Helstegt pattegris med tilbehør</div>
                     <div>🇭🇺 Sült malac köretekkel</div>
@@ -621,12 +618,10 @@
                   />
                 </div>
                 <li class="dot">
-                  <div style="font-family: 'Raleway'">
-                    <p class="agenda-time">22:00</p>
-                    <p>
-                      Fest &amp; Hygge | Buli &amp; Szórakoz | Party &amp; Fun
-                    </p>
-                  </div>
+                  <p class="agenda-time">22:00</p>
+                  <p>
+                    Fest &amp; Hygge | Buli &amp; Szórakoz | Party &amp; Fun
+                  </p>
                   <p>💃🥳🥂🕺🎊🍻🎈</p>
                 </li>
               </div>
@@ -642,10 +637,8 @@
                 />
               </div>
               <li class="dot">
-                <div style="font-family: 'Raleway'">
-                  <p class="agenda-time">10:00</p>
-                  <p>Brunch | Villásreggeli | Brunch</p>
-                </div>
+                <p class="agenda-time">10:00</p>
+                <p>Brunch | Villásreggeli | Brunch</p>
                 <p>☕🥐🍩🥞</p>
               </li>
             </ol>
@@ -870,6 +863,16 @@
         );
       "
     >
+      <div
+        id="particles"
+        style="
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 0;
+          max-height: 100vh;
+        "
+      ></div>
       <div class="hero-body">
         <div class="container">
           <div class="has-text-centered">
@@ -936,6 +939,11 @@
     </section>
 
     <!-- GALLERY SECTION BEGIN -->
+    <section
+      class="hero is-fullheight"
+      id="gallery"
+      style="background: none"
+    ></section>
     <section
       class="hero is-black is-bold is-fullheight"
       style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 1"
@@ -1005,7 +1013,7 @@
     <!-- TOASTMASTER SECTION -->
     <section
       id="toastmaster"
-      class="hero is-warning is-bold"
+      class="hero is-bold is-fullheight"
       style="
         position: relative;
         background-image: linear-gradient(
@@ -1055,13 +1063,6 @@
       id="rsvp"
       style="position: relative; background-color: #bffbbf"
     >
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title is-1" style="font-family: 'Merriweather', cursive">
-            S.U. | Visszajelzést kérünk | RSVP
-          </h1>
-        </div>
-      </div>
       <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLSfh92oaqY5AOjpbI0-UWORbkPtvdP0xeWL5aV9FJ-UosCiVGQ/viewform?embedded=true"
         width="auto"
@@ -1130,7 +1131,7 @@
     <!-- PARKING SECTION BEGIN -->
     <section
       id="parking"
-      class="hero is-info is-bold is-fullheight"
+      class="hero is-white is-bold is-fullheight"
       style="
         position: relative;
         background-image: linear-gradient(
