@@ -275,6 +275,7 @@
         font-weight: 700;
       }
       .agenda-date-label {
+        font-size: x-large;
         font-weight: 600;
         line-height: 1.5;
         margin-bottom: 8px;
@@ -306,14 +307,34 @@
         margin-bottom: 1rem;
         object-fit: cover;
       }
+      .intro-text {
+        font-family: "Satisfy", cursive;
+        font-size: 19px;
+        margin-bottom: 1.5rem;
+      }
+      .intro-text.hu {
+        font-size: 17px;
+      }
       @media screen and (min-width: 1024px) {
         #agenda.container {
           max-width: 66.6%;
         }
         .wish-img {
-          height: 350px;
+          height: 650px;
+        }
+        .intro-text {
+          font-size: 21px;
         }
       }
+      @media screen and (min-width: 1440px) {
+        .intro-text {
+          font-size: 30px;
+        }
+        .intro-text.hu {
+          font-size: 24px;
+        }
+      }
+
       /* BIG DAY STYLES END */
     </style>
     <script>
@@ -541,6 +562,19 @@
     >
       <div class="hero-body">
         <div class="container">
+          <div class="intro-text">
+            🇩🇰 Amarilla sagde ja til Jacob i Valle de la Luna og nu håber vi, at
+            du/I siger ja til at fejre det med os
+          </div>
+          <div class="intro-text hu" style="font-size: 17px">
+            🇭🇺 Amarilla igent mondott Jacobnak Valle de la Lunában, és most
+            reméljük, hogy ti is igent mondtok, hogy velünk ünnepeljetek
+          </div>
+          <div class="intro-text">
+            🇬🇧 Amarilla said yes to Jacob in Valle de la Luna and now we hope
+            you will say yes to celebrate with us
+          </div>
+          <hr style="margin-bottom: 3rem;">
           <h2
             class="title is-2 has-text-centered"
             style="font-family: 'Merriweather'"
@@ -554,17 +588,40 @@
                 <div class="img-position">
                   <img
                     class="img-icon"
-                    src="img/blueprint-img/set_2/set_2_rings.png"
+                    src="img/blueprint-img/set_2/set_2_couple.png"
                   />
                 </div>
                 <li class="dot">
                   <p class="agenda-time">12:00</p>
                   <p>Vielse | Esküvő | Wedding</p>
-                  <span>
-                    <div>🇩🇰 Det bliver magisk</div>
-                    <div>🇭🇺 Varázslatos lesz</div>
-                    <div>🇬🇧 Magic Happens</div>
-                  </span>
+                  <div>
+                    🇩🇰 Det bliver magisk når vi starter med den mere formelle
+                    del af dagen; selve vielsen, som foregår i
+                  </div>
+                  <div>
+                    🇭🇺 Varázslatos lesz; A napot a házasságkötéssel kezdjük a
+                    következö címen
+                  </div>
+                  <div>
+                    🇬🇧 Magic Happens when we start off with the more formal
+                    part; the wedding itself, taking place at
+                  </div>
+                  <br />
+                  <div><b>Christians Kirke</b></div>
+                  <div>
+                    <a href="https://maps.app.goo.gl/6ddiXh8rd59rJBiC6">
+                      Strandgade 1, 1401 København K
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="https://www.christianskirke.dk/page/409/frederiks-tyske-kirke"
+                      target="_blank"
+                      type="button"
+                    >
+                      www.christianskirke.dk
+                    </a>
+                  </div>
                 </li>
               </div>
               <div>
@@ -588,17 +645,86 @@
                 <div class="img-position">
                   <img
                     class="img-icon"
+                    src="img/blueprint-img/set_2/set_2_cam.png"
+                  />
+                </div>
+                <li class="dot">
+                  <p class="agenda-time">13:00</p>
+                  <p>
+                    Fotografering &amp; transport | Fényképezés &amp; közlekedés
+                    | Photography &amp; transport
+                  </p>
+                  <span>
+                    <div>
+                      🇩🇰 Vi poserer og laver content med fotografen mens I
+                      transporterer jer til <a>Kulhusekolonien</a>. Hvis den
+                      lille sult melder sig inden kl. 15, kan man med fordel
+                      svinge forbi
+                    </div>
+                    <div>
+                      🇭🇺 Pózolunk és elégedettek vagyunk a fotóssal, miközben Ön
+                      Kulhuse-ba utazik. Ha az éhség 15 óra előtt támad, itt van
+                      néhány hely, ahol meg kell állni útközben
+                    </div>
+                    <div>
+                      🇬🇧 We strike poses and make content with the photographer
+                      while you transport yourself to Kulhuse. If hunger strikes
+                      before 15 o'clock, here are some places to stop on the way
+                    </div>
+                    <ul>
+                      <li>
+                        <a href="https://maps.app.goo.gl/PA351CkgUwHJZ3pNA">
+                          Route 66 US Burger
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://maps.app.goo.gl/nn3zdE1ttTr59ke78"
+                          >Kulhuse Røgeri</a
+                        >
+                        Spydstegt kylling | Nyárson sült csirke | Skewered
+                        chicken
+                      </li>
+                    </ul>
+                  </span>
+                </li>
+              </div>
+              <div>
+                <div class="img-position">
+                  <img
+                    class="img-icon"
                     src="img/blueprint-img/set_2/set_2_plates.png"
                   />
                 </div>
                 <li class="dot">
                   <p class="agenda-time">17:30</p>
                   <p>Middag | Vacsora | Dinner</p>
-                  <span>
-                    <div>🇩🇰 Helstegt pattegris med tilbehør</div>
-                    <div>🇭🇺 Sült malac köretekkel</div>
-                    <div>🇬🇧 Roast suckling pig with side dishes</div>
-                  </span>
+                  <div>
+                    🇩🇰 Middag - helstegt pattegris med tilbehør - og fest
+                    afholdes i idylliske rammer i --
+                  </div>
+                  <div>
+                    🇭🇺 Vacsora - sült malac köretekkel - és a buli a következö
+                    címen lesz
+                  </div>
+                  <div>
+                    🇬🇧 Dinner - roast suckling pig with side dishes - and party
+                    in idyllic settings at
+                  </div>
+                  <p><b>Kulhusekolonien</b></p>
+                  <p>
+                    <a href="https://maps.app.goo.gl/3ruwvxph8GvZ7bMX8"
+                      >Kulhusvej 209, 3630 Jægerspris</a
+                    >
+                  </p>
+                  <div>
+                    <a
+                      href="http://www.kulhusekolonien.dk/"
+                      target="_blank"
+                      type="button"
+                    >
+                      www.kulhusekolonien.dk
+                    </a>
+                  </div>
                 </li>
               </div>
               <div>
@@ -639,7 +765,7 @@
     </section>
 
     <!-- PROGRAM SECTION BEGIN -->
-    <section
+    <!-- <section
       id="program"
       class="hero is-fullheight"
       style="
@@ -735,7 +861,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- SLEEPOVER SECTION BEGIN -->
     <section
@@ -761,9 +887,11 @@
               🇩🇰 Koloniens førstesal har sovepladser til 74 voksne (50
               permanente senge + 24 flytbare madrasser), fordelt på 10 rum.
               Værelserne har op til 8 senge, så man skal være indstillet på at
-              dele værelse med andre. Giv besked i RSVP, nederst på siden, om
-              du/I vil have en seng, og evt. hvem af de andre gæster du vil dele
-              værelse med, ved at indtaste navne i følgende
+              dele værelse med andre. Der er puder og dyner men vi beder vores
+              gæster fra Danmark om selv at medbringe linned. Giv besked i RSVP,
+              nederst på siden, om du/I vil have en seng, og evt. hvem af de
+              andre gæster du vil dele værelse med, ved at indtaste navne i
+              følgende
               <a
                 href="https://docs.google.com/spreadsheets/d/1NCEkJ3mfZxLcs8epNmUniZ5SYVqQXhJw-XIytsqhlOI/edit?usp=drivesdk"
                 rel="noopener noreferrer"
@@ -776,9 +904,10 @@
               🇭🇺 A helyszín elsö emeletén 74 alvóhely található (50 beépitett
               ágy és 24 mozgatható matrac), 10 szobára elosztva. A legtöbb szoba
               6-8 személyes így fel kell készülni arra hogy másokkal megossza
-              tok egy szobát. Az oldal alján az RSVPbe jelezzétek kérlek, hogyha
-              szeretnétek alvóhelyet foglalni és esetleg hogy kivel szeretnél
-              szobát osztani. Írja be a nevét
+              tok egy szobát. Vannak párnák, paplanok és ágyneműk. Az oldal
+              alján az RSVPbe jelezzétek kérlek, hogyha szeretnétek alvóhelyet
+              foglalni és esetleg hogy kivel szeretnél szobát osztani. Írja be a
+              nevét
               <a
                 href="https://docs.google.com/spreadsheets/d/1NCEKJ3mfZxLcs8epNmUniZ5SYVqQXhJw-XIytsqhlOI/edit?usp=drivesdk"
                 rel="noopener noreferrer"
@@ -792,10 +921,11 @@
               🇬🇧 The first floor of the venue contains sleeping spots for 74
               adults (50 permanent beds + 24 movable mattresses), split out on
               10 rooms. The rooms have up to 8 beds, so be prepared to share the
-              room with others - hostel style. Let us know in the RSVP section
-              at the bottom of the page if you would like to book a bed and
-              optionally write whom of the other guests you would prefer to
-              share room with. Insert your name in the available rooms in
+              room with others - hostel style. There are both pillows, duvets
+              and bed linen available. Let us know in the RSVP section at the
+              bottom of the page if you would like to book a bed and optionally
+              write whom of the other guests you would prefer to share room
+              with. Insert your name in the available rooms in
               <a
                 href="https://docs.google.com/spreadsheets/d/1NCEkJ3mfZxLcs8epNmUniZ5SYVqQXhJw-XIytsqhlOI/edit?usp=drivesdk"
                 rel="noopener noreferrer"
@@ -1024,12 +1154,24 @@
           <h2 class="title is-3 has-text-centered">
             Skålemester | Házigazda | Toastmaster
           </h2>
-          <div>
+          <div style="margin-bottom: 2rem;">
             <h2 class="subtitle is-5">
               Styrer talerækken | Beszédeket Konferál &amp; Szórakoztat |
               Facilitates Speeches &amp; Entertainment
             </h2>
           </div>
+          <p>
+            🇩🇰 Vi vil gerne bede jer om at holde jeres taler til 10-15 minutter, så
+            middagen ikke varer til brunch 😉
+          </p>
+          <p>
+            🇭🇺 Arra kérünk benneteket, hogy 10-15 percre tartsátok magatokat,
+            nehogy a vacsora a villásreggeliig tartson 😉
+          </p>
+          <p>
+            🇬🇧 We would like to ask you to limit yourselves to 10-15 minutes, so
+            that the dinner doesn't last until brunch 😉
+          </p>
           <div>
             <img class="image img-circle" src="images/toastmaster.jpg" />
           </div>
@@ -1074,45 +1216,37 @@
     >
       <div class="hero-body">
         <div class="container">
-          <div class="container">
-            <div class="has-text-centered">
-              <img
-                class="img-size"
-                src="img/blueprint-img/set_1/set_1_letter.png"
-              />
-            </div>
-            <h2 class="title is-3 has-text-centered">
-              Ønsker | Kívánságaink | Wishlist
-            </h2>
-            <div class="wishlist-grid">
-              <div class="wishlist-card">
-                <a
-                  href="https://dreamshop2u.dk/5239-brun-gaestebog-guld-hjerte.html"
-                  target="_blank"
-                >
-                  <img class="wish-img" src="images/wishlist-guestbook.jpg" />
-                  <strong>Gæstebog | Vendégkönyv | Guestbook</strong>
-                  <p>🇩🇰 Til at forevige dagen igennem jeres hilsner</p>
-                  <p>🇭🇺 Hogy megörökítse a napot az üdvözletéveltok</p>
-                  <p>🇬🇧 To perpetuate the day through your greetings</p>
-                </a>
-              </div>
-              <div class="wishlist-card">
-                <img class="wish-img" src="images/wishlist-selfiebox.jpg" />
-                <strong>Selfieboks | Szelfi fülki | Selfie booth</strong>
-                <p>
-                  Alternative:
-                  <a href="https://selfiecam.dk/">https://selfiecam.dk/</a>
-                  <a href="https://myselfie.dk/">https://myselfie.dk/</a>
-                </p>
-              </div>
-              <div class="wishlist-card">
-                <img class="wish-img" src="images/wishlist-money.jpg" />
-                <strong>Penge | Pénz | Money</strong>
-                <p>🇩🇰 Selvvalgt donation</p>
-                <p>🇭🇺 Önválogatott adomány</p>
-                <p>🇬🇧 Self-selected donation</p>
-              </div>
+          <div class="has-text-centered">
+            <img
+              class="img-size"
+              src="img/blueprint-img/set_1/set_1_letter.png"
+            />
+          </div>
+          <h2 class="title is-3 has-text-centered">
+            Ønsker | Kívánságaink | Wishlist
+          </h2>
+          <div class="wishlist-grid">
+            <div class="wishlist-card">
+              <img class="wish-img" src="images/wishlist-money-wide.jpg" />
+              <strong>Penge | Pénz | Money</strong>
+              <p>
+                🇩🇰 Vi ønsker os bidrag til at få en uforglemmelig fest og
+                bryllupsrejse. Hvis du vil bidrage med andet end penge, så
+                kontakt os endelig
+              </p>
+              <p>
+                🇭🇺 Hozzájárulásokat szeretnénk egy felejthetetlen buli és nászút
+                megteremtéséhez
+              </p>
+              <p>
+                🇬🇧 We wish for contributions to create an unforgettable party
+                and honeymoon
+              </p>
+              <p style="display: flex; gap: 0.5rem; align-items: center">
+                <img class="icon" src="img/blueprint-img/set_2/mobilepay.png" />
+                MobilePay: +45 26 90 80 19 💰 IBAN: DK1772680001245162 |
+                BIC/SWFT: DJURDK22
+              </p>
             </div>
           </div>
         </div>
