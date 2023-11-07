@@ -3071,13 +3071,13 @@ a.nav-item.is-tab.is-active {
   background-image: -webkit-linear-gradient(
     309deg,
     #4787b1 0%,
-    #ced0c2 71%,
+    #c4a1af 71%,
     #a2c5d8 100%
   );
   background-image: linear-gradient(
     141deg,
     #4787b1 0%,
-    #ced0c2 71%,
+    #c4a1af 71%,
     #a2c5d8 100%
   );
 }
